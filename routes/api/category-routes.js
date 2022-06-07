@@ -59,6 +59,7 @@ router.get('/:id', (req, res) => {
 
 router.post('/', (req, res) => {
   // create a new category
+  console.log('===================================');
   Category.create({
     category_name: req.body.category_name
   })
